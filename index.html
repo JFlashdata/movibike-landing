@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoviBike: La solución 360º en bikesharing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    .header {
+      background-color: #22c55e;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .header img {
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
+    }
+    .header .logo-placeholder {
+      width: 200px;
+      height: 100px;
+      background-color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #374151;
+      font-weight: bold;
+      border-radius: 8px;
+      margin: 0 auto;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section h2 {
+      color: #22c55e;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .section p, .section ul {
+      color: #374151;
+      font-size: 1.1rem;
+    }
+    .section ul {
+      list-style-type: disc;
+      padding-left: 2rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .gallery img, .team-member {
+      width: 100%;
+      height: 200px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      object-fit: cover;
+    }
+    .chart-placeholder {
+      width: 100%;
+      max-width: 600px;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 1rem auto;
+      object-fit: contain; /* Cambiado para evitar recorte */
+    }
+    .team-member {
+      background-color: #e5e7eb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #374151;
+      font-weight: bold;
+      text-align: center;
+      flex-direction: column;
+    }
+    .team-member p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    .button {
+      display: inline-block;
+      background-color: #22c55e;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-weight: bold;
+    }
+    .button:hover {
+      background-color: #16a34a;
+    }
+    .footer {
+      background-color: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <img src="Logo6.png" alt="MoviBike Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+    <div class="logo-placeholder" style="display:none;">Logo MoviBike (Placeholder)</div>
+    <h1>Bicicas: Sistema de Bikesharing en Castellón</h1>
+    <p>Un proyecto de movilidad sostenible por MoviBike</p>
+  </header>
+
+  <section class="section">
+    <h2>Introducción al Proyecto</h2>
+    <p>
+      En <strong>MoviBike</strong>, transformamos la movilidad urbana con soluciones globales. Con <strong>12 años de experiencia</strong> y un equipo de <strong>8 especialistas</strong>, ofrecemos bicicletas de última generación, estaciones inteligentes y una plataforma tecnológica para gestionar servicios de movilidad compartida. El proyecto <strong>Bicicas</strong> en Castellón de la Plana, iniciado en 2008, es un ejemplo de nuestro trabajo: desde estudios de movilidad hasta la implementación de un sistema con <strong>60 estaciones</strong> (ampliándose a 64) y <strong>600 bicicletas</strong>, incluyendo 8 eléctricas. En 2025, gestionamos una transición fluida a un nuevo sistema sin interrupciones, integrando infraestructura y tecnología existente.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Nuestro Servicio 360°</h2>
+    <p>
+      En MoviBike, ofrecemos un servicio integral 360° que cubre todas las etapas de un proyecto de bikesharing, asegurando una implementación exitosa y personalizada. Desde el análisis inicial hasta el soporte continuo, acompañamos a nuestros clientes en cada paso para optimizar la movilidad urbana sostenible. Nuestro enfoque holístico garantiza eficiencia, adaptabilidad y bajos costos operativos, adaptándonos a las características únicas de cada zona.
+    </p>
+    <ul>
+      <li><strong>Estudio de Movilidad:</strong> Realizamos un análisis exhaustivo de los patrones de movilidad en la zona específica, considerando densidad poblacional, puntos de interés (como universidades, estaciones de tren, hospitales, playas y centros históricos), flujos de tráfico, demandas estacionales y necesidades locales. Esto incluye cálculo del número óptimo de estaciones y bicicletas, proyecciones de uso y recomendaciones para integración con otros modos de transporte público. En Bicicas, identificamos rutas clave como desde Grupo Lourdes hasta avenida Ferrandis Salvador, asegurando cobertura eficiente en ~42 minutos en bicicleta.</li>
+      <li><strong>Diseño de Estaciones y Bicicletas Adaptadas:</strong> Diseñamos estaciones modulares e inteligentes con anclajes ajustables, códigos QR para acceso fácil y sistemas de seguridad anti-vandalismo, adaptadas al clima y topografía local (por ejemplo, resistentes al sol mediterráneo y salitre). Para las bicicletas, creamos modelos robustos y personalizados: estructura reforzada (16% más ligera), componentes estándar para reparaciones rápidas, cestas frontales, asientos ajustables, ruedas antipinchazos y opciones eléctricas para usuarios con movilidad reducida (mayores de 55 años o con necesidades especiales). Priorizamos la durabilidad para minimizar incidencias, utilizando materiales resistentes y piezas fáciles de sustituir.</li>
+      <li><strong>Acompañamiento para la Instalación:</strong> Proporcionamos soporte completo durante la instalación, incluyendo planificación logística, coordinación con autoridades locales para permisos y obras, montaje de estaciones y bicicletas, y pruebas iniciales. En Bicicas, comenzamos con 6 estaciones y 140 bicicletas en 2008, expandiendo a 60 con planes para 4 más, asegurando una integración fluida sin interrupciones en el servicio. Incluimos formación para operadores y usuarios, así como integración con apps móviles (iOS/Android) para registro, disponibilidad en tiempo real y mapas interactivos.</li>
+      <li><strong>Suministro y Mantenimiento Continuo:</strong> Garantizamos el suministro anual de 100 bicicletas bajo contrato marco, junto con estaciones adicionales y recambios originales para mayor rendimiento y seguridad. Ofrecemos vehículos de mantenimiento eléctricos, monitoreo digital y actualizaciones tecnológicas para minimizar incidencias y maximizar operatividad 24/7 (excepto festivos).</li>
+      <li><strong>Optimización y Expansión:</strong> Proporcionamos análisis de datos post-implementación para ajustes, como reubicación de estaciones según demandas estacionales (e.g., más en playas durante el verano). Incluimos estrategias de sostenibilidad financiera, como publicidad en bicicletas desde 2013, y medición de impacto ambiental (e.g., reducción de CO₂).</li>
+    </ul>
+    <p>
+      Este servicio 360° asegura que cada proyecto, como Bicicas, no solo se implemente con éxito, sino que evolucione para satisfacer las necesidades cambiantes de la comunidad, promoviendo ciudades más ordenadas, accesibles y ecológicas.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Estudio de Movilidad</h2>
+    <p>
+      Analizamos los patrones de movilidad en Castellón, considerando puntos clave como la universidad, la estación de tren, el hospital, la playa y el centro histórico. Identificamos rutas principales (e.g., Grupo Lourdes a avenida Ferrandis Salvador, ~42 min en bicicleta) y diseñamos una red modular.
+    </p>
+    <ul>
+      <li>Iniciado con 6 estaciones y 140 bicicletas en 2008.</li>
+      <li>Actualmente: 60 estaciones, con 4 más planificadas (e.g., cerca de la playa).</li>
+      <li>Infraestructura: ~100 km de carriles bici, líder en España.</li>
+    </ul>
+    <p>
+      <a href="https://www.bicicas.es/download/map_es.pdf" target="_blank" class="button">Ver Mapa de Estaciones</a>
+      <a href="https://www.arcgis.com/apps/OnePane/basicviewer/index.html?appid=ccddf3978be04800b7894a16fc30b668" target="_blank" class="button">Mapa Interactivo</a>
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Diseño de la Bicicleta</h2>
+    <p>
+      Diseñamos bicicletas robustas y adaptadas a Castellón, priorizando durabilidad y bajas incidencias:
+    </p>
+    <ul>
+      <li><strong>Robustez:</strong> Estructura reforzada, 16% más ligera, resistente a vandalismo y clima mediterráneo.</li>
+      <li><strong>Componentes estándar:</strong> Piezas comunes para reparaciones rápidas y económicas.</li>
+      <li><strong>Adaptaciones:</strong> Cestas, asientos ajustables, ruedas antipinchazos, 8 bicicletas eléctricas para mayores de 55 años.</li>
+      <li><strong>Sostenibilidad:</strong> Vehículos de mantenimiento eléctricos.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Implementación y Contrato Marco</h2>
+    <p>
+      Suministramos 60 estaciones modulares y 600 bicicletas, con:
+    </p>
+    <ul>
+      <li>Códigos QR para acceso vía app (iOS/Android).</li>
+      <li>Contrato marco: 100 bicicletas anuales, estaciones y recambios garantizados.</li>
+      <li>Transición 2025: Nueva infraestructura sin interrupciones, integrando sistemas existentes.</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Resultados y Crecimiento</h2>
+    <p>
+      Bicicas ha crecido significativamente desde 2008:
+    </p>
+    <div class="gallery">
+      <img src="grafica_usuarios.png" style="height: fit-content;" alt="Crecimiento de Usuarios Activos" class="chart-placeholder" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRTVFN0VCIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzM3NDE1MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkdyYWZpyWNhIGRlIFVzdWFyaW9zIEFjdGl2b3MgKE5vIGRpc3BvbmliYmxlKTwvdGV4dD48L3N2Zz4=';">
+      <img src="grafica_viajes.png" style="height: fit-content;" alt="Crecimiento de Viajes Anuales" class="chart-placeholder" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRTVFN0VCIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzM3NDE1MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkdyYWZpyWNhIGRlIFZpYWplcyBBbnVhbGVzIChObyBkaXNwb25pYmxlKTwvdGV4dD48L3N2Zz4=';">
+    </div>
+    <p>
+      <strong>Usuarios:</strong> De 160 en 2008 a 5.982 en junio de 2025 (proyección: 7.000). <br>
+      <strong>Viajes:</strong> De 32.813 en 2008 a 530.000 en 2024 (proyección 2025: 1 millón).
+    </p>
+  </section>
+
+  <section class="section" style="align-items: center;">
+    <h2>Impacto Ambiental</h2>
+    <p>
+      Bicicas ha reducido significativamente las emisiones de CO₂:
+    </p>
+    <img src="grafica_co2.png" style="height: fit-content; " alt="Reducción de CO₂" class="chart-placeholder" onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjRTVFN0VCIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzM3NDE1MSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkdyYWZpyWNhIGRlIFJlZHVjY2nDs24gZGUgQ08yIChObyBkaXNwb25pYmxlKTwvdGV4dD48L3N2Zz4=';">
+    <p>
+      <strong>Reducción de CO₂:</strong> 151,44 toneladas en 2019, ~250 en 2024, proyección 2025: ~450 toneladas.
+    </p>
+  </section>
+
+  <!-- <section class="section">
+    <h2>Nuestro Equipo</h2>
+    <div class="team">
+      <div class="team-member">
+        <p>Fina Casadey</p>
+        <p>Directora Global de Operaciones y Logística</p>
+        <p>Especialista en operaciones y comercio internacional, con experiencia en Mavic.</p>
+      </div>
+      <div class="team-member">
+        <p>Hugo Garzón</p>
+        <p>Director de Estrategia</p>
+        <p>25 años de experiencia, lideró proyectos en América Latina (Eclipse, El Gallo).</p>
+      </div>
+      <div class="team-member">
+        <p>Tomás Ruano</p>
+        <p>Director Comercial</p>
+        <p>25 años desarrollando bicicletas de uso compartido para administraciones y empresas.</p>
+      </div>
+      <div class="team-member">
+        <p>Jhonny</p>
+        <p>Miembro del Equipo</p>
+        <p>Comprometido con la movilidad sostenible.</p>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="section">
+    <h2>Galería</h2>
+    <div class="gallery">
+      <img src="Screenshot_1.jpg"  alt="Estación Bicicas en uso" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="team-member" style="display:none;">Estación Bicicas (No disponible)</div>
+      <img src="Screenshot_2.jpg" alt="Bicicletas en contexto urbano" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="team-member" style="display:none;">Bicicletas en Castellón (No disponible)</div>
+      <img src="Screenshot_3.jpg" Vista de estación y bicicletas" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="team-member" style="display:none;">Vista de Estación (No disponible)</div>
+    </div>
+    <p>
+      Más imágenes en <a href="https://www.instagram.com/bicicas/" target="_blank" class="button">Instagram de Bicicas</a>.
+    </p>
+  </section>
+
+  <!-- <section class="section">
+    <h2>Contáctenos</h2>
+    <p>
+      ¿Interesado en un sistema de bikesharing para su ciudad? Contáctenos para una solución personalizada basada en nuestra experiencia con Bicicas.
+    </p>
+    <p>Teléfono: <a href="tel:+34610793918" class="button">+34 610 79 39 18</a></p>
+    <p>Email: <a href="mailto:info@movibike.es" class="button">info@movibike.es</a></p>
+  </section> -->
+
+  <footer class="footer">
+    <p>© 2025 MoviBike. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
